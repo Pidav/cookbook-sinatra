@@ -1,0 +1,13 @@
+<<div>
+  <% @cookbook.each_with_index do |v, i| %>
+    <li>
+      <div>
+        <%="#{i + 1}. [#{v.done ? 'X' : ' '}] #{v.name} (#{v.rating}/5) - #{v.prep_time} min \n    #{v.description}"%>
+      </div>
+    </li>
+  <% end %>
+</div>
+<div>
+  <a href="/new">new</a>
+</div>
+
