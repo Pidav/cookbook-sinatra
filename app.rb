@@ -34,6 +34,9 @@ post '/recipes' do
   erb :index
 end
 
+get '/delete/:recipe' do
+
+end
 
 get '/about' do
   erb :about

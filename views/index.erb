@@ -3,6 +3,8 @@
     <li>
       <div>
         <%="#{i + 1}. [#{v.done ? 'X' : ' '}] #{v.name} (#{v.rating}/5) - #{v.prep_time} min \n    #{v.description}"%>
+<!--         <%@link  = "/delete/#{v.name}"%>
+        <a href=@link>Delete</a> -->
       </div>
     </li>
   <% end %>
